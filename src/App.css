@@ -1,38 +1,91 @@
-.App {
+.area{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Inputsearch{
+  width: 500px;
+  height: 40px;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 0px 20px 0px 20px;
+  font-size: 1vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Click-search{
+  height: 40px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: black;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: bolde;
+  margin-left: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Click-search:hover{
+  cursor: pointer;
+}
+.head{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* .bookmark{
+ border: none;
+ background-color: rgb(231, 231, 231);
+ color: #fff;
+ margin-left: 150px;
+ width: 150px;
+ height: 30px;
+ padding-top: 5px;
+ font-size:1vw;
+} */
+/* .card--image:hover{
+
+} */
+.Bb{
+  border: none;
+  background-color: rgb(211, 209, 209);
+ color: #fff;
+ margin-left: 150px;
+ width: 150px;
+ height: 30px;
+ 
+ font-size:1vw;
+}
+.Bb:hover{
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.overlay:hover {
+	/* position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 17%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center; */
+  display: block;
+  z-index: 1;
+  margin-top: -30px;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  transition: 0.5s ease;
+  color: #fff;
+  cursor: pointer;
+ 
+
+}
+.card_list{
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-wrap:nowrap;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-left:40px ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
