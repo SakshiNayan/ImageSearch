@@ -52,14 +52,14 @@ const Search =()=>{
               onClick={Submit}>Search</button>
             {/* </form> */}
             <hr />
-            <div className="card_list">
+            <div className="row text-center text-lg-start">
                 {
                     pics.map((pic)=>{
                         return(
                             
-                            <div className="card" key={pic.id}>
+                            <div className="col-lg-4 col-md-4 col-6" key={pic.id}>
                                 <img
-                                    className="card--image"
+                                    className="img-fluid img-thumbnail d-block mb-4 "
                                     alt={pic.alt_description}
                                     src={pic.urls.full}
                                     // width="20%"
